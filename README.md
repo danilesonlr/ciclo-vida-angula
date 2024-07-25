@@ -80,6 +80,9 @@ Principais ganchos (hooks) de ciclo de vida no Angular:
     Chamado antes da destruição do componente.
     Útil para realizar limpeza, como cancelar assinaturas de serviços ou desvincular manipuladores de eventos.
 
+    Como boas praticas e sempre com impostar a interface para o utilizar os metodos.
+    Intefaces:  OnInit, OnDestroy, OnChanges, DoCheck ...
+OnInit
 # LocalStorage
 
 O localStorage é uma API do navegador que permite armazenar dados no navegador do usuário de forma persistente, ou seja, os dados permanecem armazenados mesmo após o fechamento do navegador. No contexto de uma aplicação Angular, o localStorage é frequentemente utilizado para armazenar dados que precisam ser persistentes entre as sessões do usuário, como tokens de autenticação, preferências do usuário, entre outros.

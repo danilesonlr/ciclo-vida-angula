@@ -29,4 +29,13 @@ export class AppComponent implements OnInit, DoCheck{
       this.sevice.atualizarLocalStorage();
   }
 
+  deletarItem(id: Number){
+    const index = this.listaDeCampra.findIndex((item) => item.id === id);
+    this.listaDeCampra.splice(index, 1);
+  }
+
+  limparLista(){
+    this.listaDeCampra = [];
+  }
+
 }
