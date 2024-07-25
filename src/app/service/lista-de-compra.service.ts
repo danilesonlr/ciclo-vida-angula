@@ -60,6 +60,6 @@ export class ListaDeCompraService {
       comprado: itemAntigo.comprado
     }
     const id = itemAntigo.id;
-    this.listaDeCompra.splice(Number(id)-1,1), itemEditando;
+    this.listaDeCompra.splice(Number(id)-1,1, itemEditando);
   }
 }
